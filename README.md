@@ -17,8 +17,6 @@ This project uses the following libraries and services:
 - Framework - [Next.js](https://nextjs.org)
 - Styling - [Bulma](https://bulma.io) with custom SASS styles
 - Authentication - [Firebase Auth](https://firebase.google.com/products/auth)
-- Newsletter - [Mailchimp](https://mailchimp.com) (via server endpoint)
-- Contact Form - [Amazon SES](https://aws.amazon.com/ses/) (via server endpoint)
 - Analytics - [Google Analytics](https://googleanalytics.com)
 - Hosting - [ZEIT Now](https://zeit.co)
 
@@ -56,7 +54,7 @@ import { useRouter } from 'next/router';
     // Navigate with the <Link> component or with router.push()
     return (
       <div>
-        <Link to="/about">About</Link>
+        <Link href="/about"><a>About</a></Link>
         <button onClick={(e) => router.push('/about')}>About</button>
       </div>
     );
