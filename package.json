@@ -1,0 +1,44 @@
+{
+  "name": "my-divjoy-project",
+  "version": "0.1.0",
+  "private": true,
+  "keywords": [
+    "divjoy"
+  ],
+  "dependencies": {
+    "react": "16.10.2",
+    "react-dom": "16.10.2",
+    "next": "9.1.2-canary.7",
+    "@zeit/next-sass": "0.2.1-canary.4",
+    "node-sass": "4.12.0",
+    "bulma": "0.7.5",
+    "query-string": "6.8.3",
+    "firebase": "6.6.2",
+    "analytics": "0.2.2",
+    "@analytics/google-analytics": "0.2.0",
+    "mailchimp-api-v3": "1.13.1",
+    "aws-sdk": "2.533.0"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "npm run build && next export"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:8080"
+}

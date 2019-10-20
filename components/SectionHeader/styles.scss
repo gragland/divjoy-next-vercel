@@ -1,0 +1,22 @@
+.SectionHeader {
+  &__header {
+    margin-bottom: 3rem;
+
+    // Remove margin if nothing after header
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    // Added if props.centered is true
+    &.is-centered {
+      text-align: center;
+    }
+
+    .subtitle {
+      max-width: 700px;
+      // So we can have max-width but still
+      // have alignment controlled by text-align.
+      display: inline-block;
+    }
+  }
+}

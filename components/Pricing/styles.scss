@@ -1,0 +1,48 @@
+.Pricing {
+  &__column {
+    display: flex;
+    align-items: stretch;
+  }
+
+  &__card {
+    display: flex;
+    // Stretch to fit column width
+    width: 100%;
+    // Ensure .card-content stretches to fit width
+    align-items: stretch;
+  }
+
+  &__card-content {
+    // Flex so that button can position self at
+    // bottom of card using margin-top auto.
+    display: flex;
+    flex-direction: column;
+    // Stretch to fit column width
+    width: 100%;
+    padding: 2rem;
+  }
+
+  &__period {
+    font-size: 1.25rem;
+  }
+
+  &__price {
+    margin: 20px 0;
+  }
+
+  &__price-symbol {
+    opacity: 0.4;
+  }
+
+  &__price-month {
+    opacity: 0.4;
+  }
+
+  &__description {
+    padding-bottom: 40px;
+  }
+
+  &__button {
+    margin-top: auto;
+  }
+}

@@ -1,0 +1,13 @@
+.Auth {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+
+  &__bottom-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    a {
+      margin: 0 0.5rem;
+    }
+  }
+}

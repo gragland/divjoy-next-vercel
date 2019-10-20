@@ -1,0 +1,13 @@
+.BackgroundImage {
+  content: "";
+  background-image: var(--image);
+  background-position: center center;
+  background-size: cover;
+  opacity: var(--opacity);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+}

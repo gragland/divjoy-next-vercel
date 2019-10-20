@@ -1,0 +1,27 @@
+.Features {
+  max-width: 900px;
+  margin: 80px auto 0 auto;
+
+  &__columns {
+    // Reverse every other row
+    &:nth-of-type(even) {
+      flex-direction: row-reverse;
+    }
+
+    &:not(:last-of-type) {
+      padding-bottom: 1.5rem;
+      @media screen and (min-width: 769px) {
+        padding-bottom: 2.5rem;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 1.2rem !important;
+  }
+
+  &__image {
+    max-width: 300px;
+    margin: 30px auto;
+  }
+}

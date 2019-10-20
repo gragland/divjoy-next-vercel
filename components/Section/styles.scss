@@ -1,0 +1,7 @@
+.SectionComponent {
+  // Add light border if two white
+  // sections next to each other.
+  .is-white + &.is-white {
+    border-top: 1px solid #F0F0F0;
+  }
+}

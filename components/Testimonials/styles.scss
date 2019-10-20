@@ -1,0 +1,28 @@
+.Testimonials {
+  &__card {
+    flex-direction: column;
+  }
+
+  &__card-content {
+    flex-direction: column;
+    height: 100%;
+    padding: 1.8rem;
+  }
+
+  &__avatar-wrapper {
+    margin: 0 auto;
+  }
+
+  &__quote {
+    margin-top: 30px;
+  }
+
+  &__info {
+    margin-top: auto;
+    padding-top: 40px;
+  }
+
+  &__company {
+    margin-top: 3px;
+  }
+}

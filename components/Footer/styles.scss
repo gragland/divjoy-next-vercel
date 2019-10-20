@@ -1,0 +1,59 @@
+.FooterComponent {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    > div {
+      display: flex;
+      flex: none;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+
+    .brand {
+      img {
+        display: block;
+        height: 32px;
+      }
+    }
+
+    .social {
+      align-items: flex-end;
+    }
+
+    .social,
+    .links {
+      a {
+        color: inherit;
+        &:hover {
+          opacity: 0.8;
+        }
+
+        &:not(:first-of-type) {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    // Tablet and up
+    @media screen and (min-width: 769px) {
+      > div {
+        flex: 50%;
+      }
+
+      .left {
+        justify-content: flex-start;
+      }
+
+      .right {
+        justify-content: flex-end;
+      }
+
+      // Move links to end (bottom right)
+      // Swaps position with social
+      .links {
+        order: 1;
+      }
+    }
+  }
+}
