@@ -1,4 +1,5 @@
-## This is an example codebase created with [Divjoy](https://divjoy.com?utm_campaign=github_repo). You'll need to [purchase a license](https://divjoy.com?utm_campaign=github_repo) to use this code.
+### This is an example codebase created with [Divjoy](https://divjoy.com?utm_campaign=github_repo) ✨<br/>
+⚠️ You must [purchase a license](https://divjoy.com?utm_campaign=github_repo) to use this code
 
 ## 👉 Get Started
 Install dependencies
