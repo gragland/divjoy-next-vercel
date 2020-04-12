@@ -1,4 +1,4 @@
-### <p align="center"><b>This project was created with [Divjoy](https://divjoy.com?ref=readme) ✨</b></p>
+### <p align="center"><b>IMPORTANT: This is an example codebase created with [Divjoy](https://divjoy.com?utm_campaign=github_repo). You'll need to [purchase a license](https://divjoy.com?utm_campaign=github_repo) to use this code.</b></p>
 
 ## 👉 Get Started
 Install dependencies
