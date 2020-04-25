@@ -22,7 +22,7 @@ This project uses the following libraries and services:
 - Newsletter - [Mailchimp](https://mailchimp.com) (via server endpoint)
 - Contact Form - [Amazon SES](https://aws.amazon.com/ses/) (via server endpoint)
 - Analytics - [Google Analytics](https://googleanalytics.com)
-- Hosting - [ZEIT Now](https://zeit.co)
+- Hosting - [Vercel](https://vercel.com)
 
 
 ## 📚 Guide
@@ -99,19 +99,19 @@ import { useRouter } from 'next/router';
 <details>
   <summary><b>Deployment</b></summary>
   <p>
-  Install the ZEIT Now CLI
+  Install the Vercel CLI
 
 ```
 npm install -g now
 ```
 
-Then run this command in your project directory to deploy to ZEIT Now
+Then run this command in your project directory to deploy to Vercel
 
 ```
 now
 ```
 
-See the <a target="_blank" href="https://zeit.co/docs">ZEIT docs</a> for more details.
+See the <a target="_blank" href="https://vercel.com/docs">Vercel</a> for more details.
   </p>
 </details>
 
