@@ -34,7 +34,7 @@ This project uses the following libraries and services:
 - Framework - [Next.js](https://nextjs.org)
 - Styling - [Bulma](https://bulma.io) with custom SASS styles
 - Authentication - [Firebase Auth](https://firebase.google.com/products/auth)
-- Database - [Firestore](https://firebase.google.com/products/firestore)
+- Database - [Cloud Firestore](https://firebase.google.com/products/firestore)
 - Newsletter - [Mailchimp](https://mailchimp.com)
 - Contact Form - [Formspree](https://formspree.io)
 - Analytics - [Google Analytics](https://googleanalytics.com)
@@ -106,6 +106,39 @@ function MyComponent(){
         <button onClick={(e) => auth.signout()}>Signout</button>
       ) : (
         <button onClick={(e) => auth.signin('hello@divjoy.com', 'yolo')}>Signin</button>
+      )}
+    </div>
+  );
+}
+````
+
+  </p>
+</details>
+
+<details>
+<summary><b>Database</b></summary>
+
+<p>
+  This project uses <a href="https://firebase.google.com/products/firestore">Cloud Firestore</a> and includes some data fetching hooks to get you started (located in <code><a href="src/util/db.js">src/util/db.js</a></code>). You'll want to edit this file and add the query hooks you need for your project and data model.
+```js
+import { useUser } from './../util/db.js';
+
+function MyComponent(){
+  const auth = useAuth();
+
+  // Fetch extra user info from database
+  // It's okay if uid is undefined while auth is still loading
+  // The hook will return a "loading" status until it has a uid to fetch data
+  const uid = auth.user ? auth.user.uid : undefined;
+  const { data: user, status } = useUser(uid);
+
+  // Once we have the user data then display their name
+  return (
+    <div>
+      {status === "loading" ? (
+        <span>One moment please</span>
+      ) : (
+        <span>Hello {user.name}</span>
       )}
     </div>
   );
