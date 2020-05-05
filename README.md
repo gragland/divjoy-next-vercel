@@ -1,6 +1,6 @@
-### This is an example codebase created with [Divjoy](https://divjoy.com?utm_campaign=github_repo) ✨<br/>
+### This is an example codebase created with [Divjoy](https://divjoy.com/?utm_campaign=github-divjoy-next-vercel&utm_source=github&utm_medium=website&utm_content=brand) ✨<br/>
 
-⚠️ You must [purchase a license](https://divjoy.com?utm_campaign=github_repo) to use this code
+⚠️ You must [purchase a license](https://divjoy.com/?utm_campaign=github-divjoy-next-vercel&utm_source=github&utm_medium=website&utm_content=purchase) to use this code
 
 <hr/>
 
