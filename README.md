@@ -120,6 +120,7 @@ function MyComponent(){
 
 <p>
   This project uses <a href="https://firebase.google.com/products/firestore">Cloud Firestore</a> and includes some data fetching hooks to get you started (located in <code><a href="src/util/db.js">src/util/db.js</a></code>). You'll want to edit this file and add the query hooks you need for your project and data model.
+
 ```js
 import { useUser } from './../util/db.js';
 
