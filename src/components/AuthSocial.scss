@@ -1,0 +1,16 @@
+.AuthSocial {
+  &__icon {
+    position: absolute;
+    left: 0.75em;
+    img {
+      width: 20px;
+    }
+  }
+
+  &__tag {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    opacity: 0.85;
+  }
+}

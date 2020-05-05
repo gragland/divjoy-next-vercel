@@ -6,24 +6,23 @@
     "divjoy"
   ],
   "dependencies": {
-    "react": "16.10.2",
-    "react-dom": "16.10.2",
-    "next": "9.1.2-canary.7",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "next": "9.3.4",
     "@zeit/next-sass": "0.2.1-canary.4",
-    "node-sass": "4.12.0",
+    "node-sass": "4.13.0",
+    "react-hook-form": "4.10.1",
     "bulma": "0.7.5",
-    "query-string": "6.8.3",
-    "firebase": "6.6.2",
-    "analytics": "0.2.2",
-    "@analytics/google-analytics": "0.2.0",
+    "query-string": "6.9.0",
+    "firebase": "7.6.2",
     "mailchimp-api-v3": "1.13.1",
-    "aws-sdk": "2.533.0"
+    "analytics": "0.3.1",
+    "@analytics/google-analytics": "0.2.2"
   },
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "export": "npm run build && next export"
+    "start": "next start"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,6 +38,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "proxy": "http://localhost:8080"
+  }
 }

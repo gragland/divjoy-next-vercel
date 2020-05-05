@@ -1,0 +1,47 @@
+rules_version = '2';
+service cloud.firestore {
+	match /databases/{database}/documents {
+		match /users/{uid} {
+			allow read, write: if isUser(uid);
+		}
+		match /items/{id} {
+			allow read: if true;
+			//allow read: if isOwner(); // If you'd like to restrict reads
+			allow delete: if isOwner();
+			allow update: if isOwner() && willBeOwner();
+			allow create: if willBeOwner();
+		}
+	}
+}
+
+// Helper functions that simplify our rules
+
+// Check if user has the specified uid
+function isUser(uid) {
+  return isSignedIn() && request.auth.uid == uid;
+}
+
+// Check if user is signed in
+function isSignedIn() {
+  return request.auth.uid != null;
+}
+
+// Check if user matches current data owner
+function isOwner(){
+	return isUser(currentData().owner);
+}
+
+// Check if user matches future data owner (if write completes)
+function willBeOwner(){
+	return isUser(incomingData().owner);
+}
+
+// Get data being read
+function currentData() {
+	return resource.data;
+}
+
+// Get data being written (merged with current data)
+function incomingData() {
+	return request.resource.data;
+}

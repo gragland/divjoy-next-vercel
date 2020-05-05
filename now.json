@@ -1,0 +1,25 @@
+{
+  "env": {
+    "FIREBASE_API_KEY": "@firebase_api_key",
+    "FIREBASE_AUTH_DOMAIN": "@firebase_auth_domain",
+    "FIREBASE_PROJECT_ID": "@firebase_project_id",
+
+    "MAILCHIMP_API_KEY": "@mailchimp_api_key",
+    "MAILCHIMP_AUDIENCE_ID": "@mailchimp_audience_id",
+
+    "FORMSPREE_CONTACT_ID": "@formspree_contact_id",
+
+    "GOOGLE_ANALYTICS_TRACKING_ID": "@google_analytics_tracking_id"
+  },
+  "build": {
+    "env": {
+      "FIREBASE_API_KEY": "@firebase_api_key",
+      "FIREBASE_AUTH_DOMAIN": "@firebase_auth_domain",
+      "FIREBASE_PROJECT_ID": "@firebase_project_id",
+
+      "FORMSPREE_CONTACT_ID": "@formspree_contact_id",
+
+      "GOOGLE_ANALYTICS_TRACKING_ID": "@google_analytics_tracking_id"
+    }
+  }
+}
