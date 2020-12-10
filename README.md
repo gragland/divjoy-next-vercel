@@ -2,6 +2,8 @@
 
 ⚠️ You must [purchase a license](https://divjoy.com/?utm_campaign=github-divjoy-next-vercel&utm_source=github&utm_medium=website&utm_content=purchase) to use this code
 
+⚠️ The code in this repo is not up-to-date. Head over to [Divjoy](https://divjoy.com/?utm_campaign=github-divjoy-next-vercel&utm_source=github&utm_medium=website&utm_content=purchase) to generate a new Next.js + Vercel project.
+
 <hr/>
 
 ## 👉 Get Started
