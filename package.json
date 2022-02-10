@@ -10,7 +10,7 @@
     "react-dom": "16.12.0",
     "next": "9.3.4",
     "@zeit/next-sass": "0.2.1-canary.4",
-    "node-sass": "4.13.0",
+    "node-sass": "7.0.0",
     "react-hook-form": "4.10.1",
     "bulma": "0.7.5",
     "query-string": "6.9.0",
